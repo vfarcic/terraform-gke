@@ -1,6 +1,6 @@
 variable "cluster_name" {
   type    = string
-  default = "jx-demo"
+  default = "devops-27-demo"
 }
 
 variable "project_id" {
@@ -33,11 +33,11 @@ variable "max_node_count" {
   default = 3
 }
 
-# Retrieve the list of currently supported versions by executing `gcloud container get-server-config`
+# Retrieve the list of currently supported versions by executing `gcloud container get-server-config --region us-east1`
 # Use a version from the `validMasterVersions` section
 variable "k8s_version" {
   type = string
-  default = "1.15.7-gke.2"
+  default = "1.15.7-gke.23"
 }
 
 provider "google" {
