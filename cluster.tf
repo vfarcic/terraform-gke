@@ -1,6 +1,6 @@
 variable "cluster_name" {
   type    = string
-  default = "devops-paradox"
+  default = "jx-workshop"
 }
 
 variable "project_id" {
@@ -15,7 +15,7 @@ variable "region" {
 
 variable "machine_type" {
   type    = string
-  default = "g1-small"
+  default = "n1-standard-8"
 }
 
 variable "preemptible" {
@@ -30,7 +30,7 @@ variable "min_node_count" {
 
 variable "max_node_count" {
   type    = number
-  default = 3
+  default = 10
 }
 
 # Retrieve the list of currently supported versions by executing `gcloud container get-server-config --region us-east1`
