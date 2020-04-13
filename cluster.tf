@@ -37,7 +37,7 @@ variable "max_node_count" {
 # Use a version from the `validMasterVersions` section
 variable "k8s_version" {
   type = string
-  default = "1.15.7-gke.23"
+  default = "1.15.11-gke.5"
 }
 
 provider "google" {
