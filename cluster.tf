@@ -1,6 +1,6 @@
 variable "cluster_name" {
   type    = string
-  default = "devops-27-demo"
+  default = "demo"
 }
 
 variable "project_id" {
