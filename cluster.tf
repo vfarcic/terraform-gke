@@ -1,11 +1,11 @@
 variable "cluster_name" {
   type    = string
-  default = "devops-27-demo"
+  default = "jx-demo"
 }
 
 variable "project_id" {
   type    = string
-  default = "devops-27"
+  default = "jx-demo-project"
 }
 
 variable "region" {
