@@ -5,7 +5,7 @@ variable "cluster_name" {
 
 variable "project_id" {
   type    = string
-  default = "jx-demo-project"
+  default = "jx-demo-276816"
 }
 
 variable "region" {
