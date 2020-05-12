@@ -1,11 +1,11 @@
 variable "cluster_name" {
   type    = string
-  default = "devops-27-demo"
+  default = "jx-demo"
 }
 
 variable "project_id" {
   type    = string
-  default = "devops-27"
+  default = "jx-demo-276816"
 }
 
 variable "region" {
@@ -37,7 +37,7 @@ variable "max_node_count" {
 # Use a version from the `validMasterVersions` section
 variable "k8s_version" {
   type = string
-  default = "1.15.7-gke.23"
+  default = "1.15.11-gke.5"
 }
 
 provider "google" {
