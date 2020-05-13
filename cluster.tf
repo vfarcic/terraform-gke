@@ -84,6 +84,16 @@ resource "null_resource" "kubeconfig" {
   provisioner "local-exec" {
     command = "KUBECONFIG=$PWD/kubeconfig gcloud container clusters get-credentials ${var.cluster_name} --region=${var.region} --project=${var.project_id}"
   }
+  depends_on = [
+    google_container_cluster.primary,
+  ]
+}
+
+resource "null_resource" "destroy-kubeconfig" {
+  provisioner "local-exec" {
+    when    = "destroy"
+    command = "rm -f $PWD/kubeconfig"
+  }
 }
 
 output "cluster_name" {
@@ -101,3 +111,4 @@ output "project_id" {
 output "kubeconfig" {
   value = "export KUBECONFIG=$PWD/kubeconfig"
 }
+
