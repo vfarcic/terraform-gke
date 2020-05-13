@@ -91,7 +91,7 @@ resource "null_resource" "kubeconfig" {
 
 resource "null_resource" "destroy-kubeconfig" {
   provisioner "local-exec" {
-    when    = "destroy"
+    when    = destroy
     command = "rm -f $PWD/kubeconfig"
   }
 }
