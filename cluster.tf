@@ -15,7 +15,7 @@ variable "region" {
 
 variable "machine_type" {
   type    = string
-  default = "n1-standard-2"
+  default = "n1-standard-4"
 }
 
 variable "preemptible" {
